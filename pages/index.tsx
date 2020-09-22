@@ -1,58 +1,36 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../types/post'
+import * as React from "react";
+import Container from "../components/container";
+import Header from "../components/Header";
+import Layout from "../components/layout";
+import Head from "next/head";
+import Task1 from "../components/Tasks/task1";
+import Task0 from "../components/Tasks/task0";
+import Task2 from "../components/Tasks/task2";
+import Task3 from "../components/Tasks/task3";
+import Task4 from "../components/Tasks/task4";
+import Task5 from "../components/Tasks/task5";
+import TaskCompleteButton from "../components/Tasks/taskCompleteButton";
 
-type Props = {
-  allPosts: Post[]
-}
-
-const Index = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+const Index = () => {
   return (
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Papercup technical assessment</title>
         </Head>
         <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <Header />
+          <Task0 />
+          <Task1 />
+          <Task2 />
+          <Task3 />
+          <Task4 />
+          <Task5 />
+          <TaskCompleteButton />
         </Container>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default Index
-
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
-
-  return {
-    props: { allPosts },
-  }
-}
+export default Index;
