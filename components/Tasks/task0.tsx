@@ -8,8 +8,8 @@ const Task0: React.FC = () => {
       resources={[
         {
           name: "Repository",
-          value: "https://github.com",
-          link: "https://tailwindcss.com/docs/container"
+          value: "https://github.com/papercup-ai/fe-technical-test",
+          link: "https://github.com/papercup-ai/fe-technical-test"
         },
         {
           name: "Styling Framework",
