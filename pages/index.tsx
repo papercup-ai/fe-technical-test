@@ -9,6 +9,7 @@ import Task2 from "../components/Tasks/task2";
 import Task3 from "../components/Tasks/task3";
 import Task4 from "../components/Tasks/task4";
 import Task5 from "../components/Tasks/task5";
+import Task6 from "../components/Tasks/task6";
 import TaskCompleteButton from "../components/Tasks/taskCompleteButton";
 
 const Index = () => {
@@ -26,6 +27,7 @@ const Index = () => {
           <Task3 />
           <Task4 />
           <Task5 />
+          <Task6 />
           <TaskCompleteButton />
         </Container>
       </Layout>

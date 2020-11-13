@@ -49,6 +49,7 @@ const Task0: React.FC = () => {
         <ul className="list-disc pl-5">
           <li>deal with new libraries;</li> <li>structure your work; </li>
           <li>style the elements;</li>
+          <li>attention to detail;</li>
         </ul>{" "}
       </div>
     </TaskBase>

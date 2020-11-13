@@ -4,7 +4,7 @@ import TaskBase from "./taskBase";
 const Task5 = () => {
   return (
     <TaskBase
-      title="Task 5: Display edits and interact"
+      title="Task 5: Display annotations"
       image="/assets/waveform_play.gif"
       resources={[
         {
@@ -15,7 +15,7 @@ const Task5 = () => {
             "https://wavesurfer-js.org/api/class/src/plugin/regions/index.js~RegionsPlugin.html"
         }
       ]}
-      goal="Add ability to play each annotation"
+      goal="Add ability to play each annotation and display each annoation"
     >
       We would also like to display our annotations below the waveform, and be
       able to play each annotation. The design of the each container is up to

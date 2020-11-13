@@ -43,7 +43,9 @@ const TaskBase: React.FC<{
 
       {resources && (
         <div
-          className={cn("transition-all duration-100 ease-in-out")}
+          className={cn(
+            "transition-all duration-100 ease-in-out overflow-hidden"
+          )}
           style={{
             maxHeight: isTaskComplete
               ? "0px"
@@ -73,13 +75,13 @@ const TaskBase: React.FC<{
               </div>
             </dl>
           ))}
-          {goal && (
-            <div className="px-4 py-5 border-b bg-gray-300 sm:px-6">
-              <h3 className="text-lg leading-6 font-medium text-gray-900">
-                Goal: {goal}
-              </h3>
-            </div>
-          )}
+        </div>
+      )}
+      {goal && (
+        <div className="px-4 py-5 border-b bg-gray-300 sm:px-6">
+          <h3 className="text-lg leading-6 font-medium text-gray-900">
+            Goal: {goal}
+          </h3>
         </div>
       )}
     </div>
