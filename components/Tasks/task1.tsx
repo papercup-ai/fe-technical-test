@@ -4,7 +4,7 @@ import TaskBase from "./taskBase";
 const Task1: React.FC = () => {
   return (
     <TaskBase
-      title="Task 1: Connect to GraphQL Server and fetch video data"
+      title="Task 1: Connect to GraphQL Server and fetch audio data"
       resources={[
         {
           name: "GraphQL Server",
@@ -19,7 +19,7 @@ const Task1: React.FC = () => {
             "https://www.apollographql.com/docs/react/data/queries/#executing-a-query"
         }
       ]}
-      goal="Fetch a video with id, name and S3 URL fields from the API with an ID of 'papercup'"
+      goal="Fetch a audio with id, name and S3 URL fields from the API with an ID of 'papercup'"
     >
       We have set-up a GraphQL server, you can expore the API via the GraphQL
       Playground. The documentation can be accessed by pressing the Docs button

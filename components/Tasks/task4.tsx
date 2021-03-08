@@ -17,7 +17,7 @@ const Task4 = () => {
       ]}
       goal="Add annotations on top of the waveform"
     >
-      The GraphQL library returns annotations as part of the video object,
+      The GraphQL library returns annotations as part of the audio object,
       visualise the annotation on the waveform by using the API provided by
       Wavesurfer.
     </TaskBase>
