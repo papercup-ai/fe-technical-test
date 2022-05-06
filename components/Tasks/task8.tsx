@@ -4,7 +4,7 @@ import TaskBase from "./taskBase";
 const Task8 = () => {
   return (
     <TaskBase
-      title="Task 8: Merge segments (again)."
+      title="Extension 2: Merge segments (again)."
       goal="Merge segments if any overlaps occur after dragging"
       image="/assets/mergeSegments.gif"
     >

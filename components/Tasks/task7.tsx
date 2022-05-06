@@ -4,7 +4,7 @@ import TaskBase from "./taskBase";
 const Task7 = () => {
   return (
     <TaskBase
-      title="Task 7: Dragging segments"
+      title="Extension 1: Dragging segments"
       goal="Add ability to drag segments"
       image="/assets/dragSegments.gif"
     >
