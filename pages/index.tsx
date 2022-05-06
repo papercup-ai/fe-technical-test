@@ -11,6 +11,8 @@ import Task4 from "../components/Tasks/task4";
 import Task5 from "../components/Tasks/task5";
 import Task6 from "../components/Tasks/task6";
 import TaskCompleteButton from "../components/Tasks/taskCompleteButton";
+import Task7 from "../components/Tasks/task7";
+import Task8 from "../components/Tasks/task8";
 
 const Index = () => {
   return (
@@ -28,6 +30,8 @@ const Index = () => {
           <Task4 />
           <Task5 />
           <Task6 />
+          <Task7 />
+          <Task8 />
           <TaskCompleteButton />
         </Container>
       </Layout>

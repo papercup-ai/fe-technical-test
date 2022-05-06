@@ -16,7 +16,7 @@ const Header = () => {
           <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
             <span className="font-bold">Technical assessment</span>
           </h4>
-          <h5>Last updated: November</h5>
+          <h5>Last updated: May 2022</h5>
         </div>
       </div>
 

@@ -52,15 +52,14 @@ const TaskPlayground = () => {
         </h2>
         <p>
           WaveSurfer is a great library and Next.js is great framework, but
-          together they havee small issue. Next.js renders all the code on
-          server side first, and then hydrates it on the front-end. This works
-          great to generated static parts of the website, and if it detects the
-          website has no dynamic elements, it will generate a static page. This
-          causes a small problem when rendering WaveSurfer, since it is not
-          designed specifically for server side rendering, we can an error when
-          trying to import it. To get around the issue, we can import the
-          modules when the component is mounted or when window is available.{" "}
-          <br /> <br />
+          together they have small issue. Next.js renders all the code on server
+          side first, and then hydrates it on the front-end. This works great to
+          generated static parts of the website, and if it detects the website
+          has no dynamic elements, it will generate a static page. This causes a
+          small problem when rendering WaveSurfer, since it is not designed
+          specifically for server side rendering, we can an error when trying to
+          import it. To get around the issue, we can import the modules when the
+          component is mounted or when window is available. <br /> <br />
           Example code: <br />
         </p>
         <img src="/assets/warning.png" />
